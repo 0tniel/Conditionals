@@ -167,8 +167,7 @@ if (condition) {
 ```
 
 ### Working Of the if-else Statement
-1) Control Flow: The program flow enters the if statement block.
-<br>
+1) Control Flow: The program flow enters the if statement block.<br>
 2) Condition Testing: The condition specified in the if statement is evaluated. <br>
 3) True Condition: If the condition is evaluated as true, the code inside the if block is executed. <br>
 4) False Condition: If the condition evaluates to false, the control flow skips the if block and moves to the else block. <br>
@@ -186,11 +185,11 @@ Step 3: Input Number
 <br>
 Step 4: If number % 2 == 0
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Display number is even
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Display number is even
 <br>
 else
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Display number is odd
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Display number is odd
 <br>
 Step 5: End
 <br>

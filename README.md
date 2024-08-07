@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/fe921131-8bde-4431-bc23-cef3f540d886)# Conditionals
+# Conditionals
+
 This repository features beginner C++ programs: Days of the Week uses a switch for day display, Grade Calculation determines grades from scores, Greatest Number finds the largest of three, Odd or Even checks number parity, Positive or Negative classifies numbers, Quadrant Check identifies point quadrants, and Vowel Checker checks vowels.
 <br>
 <br>

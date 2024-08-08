@@ -43,3 +43,13 @@ int main() {
     
     return 0;
 }
+/*
+Enter maths marks: 49
+Enter physics marks: 90
+Enter chemistry marks: 56
+Enter english marks: 66
+Enter computer marks: 98
+Total marks: 359
+Average marks: 71.8
+Grade: B
+*/

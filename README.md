@@ -1,4 +1,4 @@
-# Conditionals
+![image](https://github.com/user-attachments/assets/dbbc8daf-e3d2-4edb-bfbb-a51ff036caf2)# Conditionals
 
 This repository features beginner C++ programs: Days of the Week uses a switch for day display, Grade Calculation determines grades from scores, Greatest Number finds the largest of three, Odd or Even checks number parity, Positive or Negative classifies numbers, Quadrant Check identifies point quadrants, and Vowel Checker checks vowels.
 <br>
@@ -228,3 +228,150 @@ Enter a number: 7
 ## Conclusion 
 The C++ program effectively determines whether a given number is even or odd
 
+<br>
+<br>
+<p align="center">Experiment 5c</p>
+<br>
+
+## Aim
+To develop a C++ program that calculates the total and average marks of five subjects and assigns a grade based on the average score.
+
+## Software Used
+- Dev C++
+
+## Theory
+Decision-making in C++ enables the execution of specific code blocks based on certain conditions. It allows programs to make decisions and perform different actions depending on the input or other factors.
+<br>
+The <b>if</b> Statement: The if statement evaluates a condition, and if the condition is true, it executes the block of code within the if block. If the condition is false, the code inside the if block is skipped, and the program continues to the next statement.
+<br>
+The <b>else</b> Statement: The else statement complements the if statement by providing an alternative block of code to execute when the condition is false. It ensures that one of two mutually exclusive code blocks is executed, based on the outcome of the condition.
+<br>
+
+### Syntax
+```cpp
+if (condition) {
+    // Executes this block if condition is true
+} else {
+    // Executes this block if condition is false
+}
+```
+<br>
+This program calculates the total and average marks for five subjects entered by the user and then assigns a grade based on the average score using a series of conditional statements. The if-else if-else ladder evaluates the average marks against specified thresholds to determine the corresponding grade, such as "A" for averages greater than 90, "B+" for averages greater than 80, and so on. This approach allows for straightforward classification of performance into distinct categories, providing an easy way to assess the user's overall academic achievement based on their input.
+
+## Algorithm 
+Step 1: Start
+<br>
+Step 2: Declare Variables maths, physics, chemistry, english, computer, total, avg.
+<br>
+Step 3: Input maths, physics, chemistry, english, computer marks.
+<br>
+Step 4: Calculate Total (total = maths + physics + chemistry + english + computer)
+<br>
+Step 5: Calculate Average (avg = total / 5)
+<br>
+Step 6: Display total marks
+<br>
+Step 7: Display avg marks
+<br>
+Step 8: Determine Grade
+<br>
+If avg > 90, then grade is "A".
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Else if avg > 80, then grade is "B+"
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Else if avg > 70, then grade is "B".
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Else if avg > 60, then grade is "C+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Else if avg > 50, then grade is "C"
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Else if avg > 40, then grade is "P"
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Else grade is "F"
+<br>
+Step 9: Display grade
+<br>
+Step 10: End
+<br>
+
+## Code
+```cpp
+
+// GradeCalculator.cpp
+//Otniel Jhirad
+//23070123069
+//ENTC A3
+#include <iostream>
+using namespace std;
+
+int main() {
+    float maths, physics, chemistry, english, computer, total, avg;
+    
+    cout << "Enter maths marks: ";
+    cin >> maths;
+    cout << "Enter physics marks: ";
+    cin >> physics;
+    cout << "Enter chemistry marks: ";
+    cin >> chemistry;
+    cout << "Enter english marks: ";
+    cin >> english;
+    cout << "Enter computer marks: ";
+    cin >> computer;
+    
+    total = maths + physics + chemistry + english + computer;
+    avg = total / 5;
+    
+    cout << "Total marks: " << total << endl;
+    cout << "Average marks: " << avg << endl;
+
+    if (avg > 90) {
+        cout << "Grade: A" << endl;
+    } else if (avg > 80) {
+        cout << "Grade: B+" << endl;
+    } else if (avg > 70) {
+        cout << "Grade: B" << endl;
+    } else if (avg > 60) {
+        cout << "Grade: C+" << endl;
+    } else if (avg > 50) {
+        cout << "Grade: C" << endl;
+    } else if (avg > 40) {
+        cout << "Grade: P" << endl;
+    } else {
+        cout << "Grade: F" << endl;
+    }
+    
+    return 0;
+}
+/*
+Enter maths marks: 49
+Enter physics marks: 90
+Enter chemistry marks: 56
+Enter english marks: 66
+Enter computer marks: 98
+Total marks: 359
+Average marks: 71.8
+Grade: B
+*/
+```
+
+## Output
+
+![image](https://github.com/user-attachments/assets/0f9f163b-e336-4766-9e8c-cf741f6a3656)
+
+## Conclusion
+This Grade Calculator program effectively computes the total and average marks for five subjects and assigns a corresponding grade based on the average score.
+
+<br>
+<br>
+<p align="center">Experiment 5d</p>
+<br>
+
+## Aim
+To find the greatest number of the three numbers
+
+## Software Used
+- Dev C++
+
+## Theory
+This C++ program determines the largest of three input numbers using nested if-else statements. It begins by prompting the user to input three numbers. The program then compares the first number (num1) with the second (num2) and third (num3) numbers. If num1 is greater than both num2 and num3, it is declared the largest number. Otherwise, if num2 is greater than num3, it is identified as the largest number. If neither of these conditions is met, num3 is determined to be the largest number. This method effectively evaluates the relative sizes of the three numbers by making direct comparisons and ensures accurate results.
+<br>

@@ -18,3 +18,8 @@ int main() {
     
     return 0;
 }
+/*
+Output
+Enter a number: -23
+The given number is negative
+*/

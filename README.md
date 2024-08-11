@@ -659,6 +659,227 @@ The point is on the x-axis
 
 ## Conclusion
 
-Thus we have learned about if-else condition
+Thus we have learned about the if-else condition
+
+
+<br>
+<br>
+<p align="center"><b>Experiment 5g</b></p>
+<br>
+
+## Aim
+
+To implement a simple calculator program in C++ that performs basic arithmetic operations, including addition, subtraction, multiplication, and division. 
+
+## Software Used
+- Dev C++
+
+## Theory
+
+The switch statement in C++ is a flow control mechanism used to execute different blocks of code based on the value of a given expression. It serves as an alternative to the long if-else-if ladder, providing a structured way to dispatch execution to various parts of the code depending on the expression's value.
+<br>
+
+### Syntax of Switch Statement in C++:
+
+```cpp
+switch (expression) {
+    case value_1:
+        // statements_1;
+        break;
+    case value_2:
+        // statements_2;
+        break;
+    ...
+    ...
+    default:
+        // default_statements;
+        break;
+}
+```
+
+## Algorithm
+
+Step 1: Start
+<br>
+Step 2: Declare three variables num 1, num 2 & choice.
+<br>
+Step 3: Display the calculator menu with options for Addition, Subtraction, Division, and Multiplication.
+<br>
+Step 4: Input choice.
+<br>
+Step 5: Input the first number into num1 and the second number into num2.
+<br>
+Step 6: Evaluate the choice with a switch statement:
+<br>
+Case 1: If the choice is 1, perform addition and display the result (num1 + num2).
+<br>
+Case 2: If the choice is 2, perform subtraction and display the result (num1 - num2).
+<br>
+Case 3: If the choice is 3:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If num2 is 0, display "Error: Division by zero is not allowed."
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Else, perform division and display the result (num1 / num2).
+<br>
+Case 4: If the choice is 4, perform multiplication and display the result (num1 * num2).
+<br>
+Default: If the choice is not between 1 and 4, display "Invalid operation. Please choose a number between 1 and 4."
+<br>
+Step 7: End
+<br>
+
+## Code
+
+```cpp
+// Name: Otniel Jhirad
+// PRN: 23070123069
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    double num1, num2;
+
+    cout << "Simple Calculator" << endl;
+    cout << "1. Addition" << endl;
+    cout << "2. Subtraction" << endl;
+    cout << "3. Division" << endl;
+    cout << "4. Multiplication" << endl;
+    cout << "Enter the operation (1-4): ";
+    cin >> choice;
+
+    cout << "Enter the first number: ";
+    cin >> num1;
+    cout << "Enter the second number: ";
+    cin >> num2;
+
+    switch (choice) {
+        case 1:
+            cout << "Result: " << num1 + num2 << endl;
+            break;
+        case 2:
+            cout << "Result: " << num1 - num2 << endl;
+            break;
+        case 3:
+            if (num2 == 0) {
+                cout << "Error: Division by zero is not allowed." << endl;
+            } else {
+                cout << "Result: " << num1 / num2 << endl;
+            }
+            break;
+        case 4:
+            cout << "Result: " << num1 * num2 << endl;
+            break;
+        default:
+            cout << "Invalid operation. Please choose a number between 1 and 4." << endl;
+            break;
+    }
+
+    return 0;
+}
+
+/* Example Output:
+Simple Calculator
+1. Addition
+2. Subtraction
+3. Division
+4. Multiplication
+Enter the operation (1-4): 1
+Enter the first number: 3
+Enter the second number: 4
+Result: 7
+*/
+```
+
+## Output
+
+![image](https://github.com/user-attachments/assets/3c54edd4-8204-4df8-aeed-ed4f838a7e37)
+
+## Conclusion 
+
+In this program, we developed a simple calculator using a switch statement to perform basic arithmetic operations such as addition, subtraction, division, and multiplication.
+
+
+
+<br>
+<br>
+<p align="center"><b>Experiment 5h</b></p>
+<br>
+
+## Aim
+
+To implement a C++ program that checks whether a given character is a vowel or a consonant
+
+## Software Used
+- Dev C++
+
+## Theory
+
+Decision-making in C++ enables the execution of specific code blocks based on certain conditions. It allows programs to make decisions and perform different actions depending on the input or other factors.
+<br>
+The <b>if</b> Statement: The if statement evaluates a condition, and if the condition is true, it executes the block of code within the if block. If the condition is false, the code inside the if block is skipped, and the program continues to the next statement.
+<br>
+The <b>else</b> Statement: The else statement complements the if statement by providing an alternative block of code to execute when the condition is false. It ensures that one of two mutually exclusive code blocks is executed, based on the outcome of the condition.
+<br>
+<p>In the VowelConsonant.cpp program, the primary objective is to classify a given character as either a vowel or a consonant. The program first prompts the user to enter a single character. It then checks if this character is one of the vowels (both uppercase and lowercase) by comparing it against the set of vowel characters: 'a', 'e', 'i', 'o', 'u' and their uppercase counterparts. If the character matches any of these vowels, the program outputs that the character is a vowel. Otherwise, it outputs that the character is a consonant. This classification process utilizes simple conditional checks to distinguish between vowels and consonants, providing clear feedback based on the user's input.</p>
+<br>
+
+## Algorithm
+
+Step 1: Start
+<br>
+Step 2: Declare a  variable character.
+<br>
+Step 3: Input character.
+<br>
+Step 4: Check if the character is a vowel:
+<br>
+If character is 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', or 'U':
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Output "The character is a vowel."
+<br>
+Else:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Output "The character is a consonant."
+<br>
+Step 5: End
+<br>
+
+## Code
+
+```cpp
+// Name: Otniel Jhirad
+// PRN: 23070123069
+#include <iostream>
+using namespace std;
+
+int main() {
+    char character;
+    cout << "Enter a character: ";
+    cin >> character;
+    if (character == 'a' || character == 'e' || character == 'i' || 
+        character == 'o' || character == 'u' || character == 'A' || 
+        character == 'E' || character == 'I' || character == 'O' || 
+        character == 'U') {
+        cout << character << " is a vowel." << endl;
+    } else {
+        cout << character << " is a consonant." << endl;
+    }
+
+    return 0;
+}
+
+/* Example Output:
+Enter a character: o
+o is a vowel.
+*/
+```
+
+## Output
+
+![image](https://github.com/user-attachments/assets/c2032567-8c23-46b2-875b-10ce904f8e3b)
+
+## Conclusion
+
+In this program, we implemented a character classification system to determine if a given character is a vowel or a consonant.
 
 

@@ -549,3 +549,112 @@ The given number is negative
 ## Conclusion
 
 Thus, we used a simple if-else statement to determine whether the given number is positive or negative.
+
+<br>
+<br>
+<p align="center"><b>Experiment 5f</b></p>
+<br>
+
+## Aim
+To determine whether a number is positive or negative in C++
+
+## Software Used
+- Dev C++
+
+## Theory
+
+Decision-making in C++ enables the execution of specific code blocks based on certain conditions. It allows programs to make decisions and perform different actions depending on the input or other factors.
+<br>
+The <b>if</b> Statement: The if statement evaluates a condition, and if the condition is true, it executes the block of code within the if block. If the condition is false, the code inside the if block is skipped, and the program continues to the next statement.
+<br>
+The <b>else</b> Statement: The else statement complements the if statement by providing an alternative block of code to execute when the condition is false. It ensures that one of two mutually exclusive code blocks is executed, based on the outcome of the condition.
+<br>
+<p>In the PointQuadrant.cpp program, we determine the quadrant or axis on which a point lies based on its Cartesian coordinates (x, y). The program prompts the user to input the x and y values of the point. It then uses a series of if-else statements to classify the point's location in the coordinate system. If both x and y are positive, the point is in the 1st quadrant; if x is negative and y is positive, the point is in the 2nd quadrant; if x is positive and y is negative, the point is in the 3rd quadrant; and if both x and y are negative, the point is in the 4th quadrant. Additionally, if either x or y is zero, the point is classified as being on one of the coordinate axes or at the origin if both are zero. This method allows the program to categorize the point’s position within the Cartesian plane effectively.</p>
+
+## Algorithm 
+
+Step 1: Start
+<br>
+Step 2: Declare variables x and y.
+<br>
+Step 3: Input x.
+<br>
+Step 4: Input y.
+<br>
+Step 5: Determine the location of the point based on the values of x and y:
+<br>
+If x is greater than 0 and y is greater than 0:
+<br>
+Display "The point is in the 1st quadrant."
+<br>
+Else if x is less than 0 and y is greater than 0:
+<br>
+Display The point is in the 2nd quadrant."
+<br>
+Else if x is greater than 0 and y is less than 0:
+<br>
+Display"The point is in the 3rd quadrant."
+<br>
+Else if x is less than 0 and y is less than 0:
+<br>
+Display "The point is in the 4th quadrant."
+<br>
+Else if x is equal to 0 and y is equal to 0:
+<br>
+Display "The point is on the origin."
+<br>
+Else if x is equal to 0:
+<br>
+Display "The point is on the y-axis."
+<br>
+Else if y is equal to 0:
+<br>
+Display "The point is on the x-axis."
+<br>
+
+## Code 
+
+```cpp
+// PointQuadrant.cpp
+//Otniel Jhirad
+//23070123069
+//ENTC A3
+#include <iostream>
+using namespace std;
+int main() {
+    float x, y;
+    cout << "Enter x value: ";
+    cin >> x;
+    cout << "Enter y value: ";
+    cin >> y;
+    
+    if (x > 0 && y > 0) {
+        cout << "The point is in the 1st quadrant" << endl;
+    } else if (x < 0 && y > 0) {
+        cout << "The point is in the 2nd quadrant" << endl;
+    } else if (x > 0 && y < 0) {
+        cout << "The point is in the 3rd quadrant" << endl;
+    } else if (x < 0 && y < 0) {
+        cout << "The point is in the 4th quadrant" << endl;
+    } else if (x == 0 && y == 0) {
+        cout << "The point is on the origin" << endl;
+    } else if (x == 0) {
+        cout << "The point is on the y-axis" << endl;
+    } else if (y == 0) {
+        cout << "The point is on the x-axis" << endl;
+    }
+    
+    return 0;
+}
+
+```
+
+## Output
+
+![image](https://github.com/user-attachments/assets/59a50d84-194d-4c03-964c-b91c61bda2ce)
+
+## Conclusion
+
+Thus we have learned about if else condition
+
+

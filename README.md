@@ -375,3 +375,91 @@ To find the greatest number of the three numbers
 ## Theory
 This C++ program determines the largest of three input numbers using nested if-else statements. It begins by prompting the user to input three numbers. The program then compares the first number (num1) with the second (num2) and third (num3) numbers. If num1 is greater than both num2 and num3, it is declared the largest number. Otherwise, if num2 is greater than num3, it is identified as the largest number. If neither of these conditions is met, num3 is determined to be the largest number. This method effectively evaluates the relative sizes of the three numbers by making direct comparisons and ensures accurate results.
 <br>
+Decision-making in C++ enables the execution of specific code blocks based on certain conditions. It allows programs to make decisions and perform different actions depending on the input or other factors.
+<br>
+The <b>if</b> Statement: The if statement evaluates a condition, and if the condition is true, it executes the block of code within the if block. If the condition is false, the code inside the if block is skipped, and the program continues to the next statement.
+<br>
+The <b>else</b> Statement: The else statement complements the if statement by providing an alternative block of code to execute when the condition is false. It ensures that one of two mutually exclusive code blocks is executed, based on the outcome of the condition.
+<br>
+
+### Syntax
+```cpp
+if (condition) {
+    // Executes this block if condition is true
+} else {
+    // Executes this block if condition is false
+}
+```
+
+## Algorithm
+
+Step 1: Start
+<br>
+Step 2: Declare variables num1, num2, and num3.
+<br>
+Step 3: Input num1,num2,num3.
+<br>
+Step 4: Compare the three numbers to find the largest:
+<br>
+If num1 is greater than num2:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If num1 is greater than num3, then num1 is the largest.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Else, num3 is the largest.
+<br>
+Else:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If num2 is greater than num3, then num2 is the largest.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Else, num3 is the largest.
+<br>
+Step 7: Display the largest number.
+<br>
+Step 8: End
+<br>
+
+## Code
+
+```cpp
+// Name: Otniel
+// PRN: 23070123069
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1,num2,num3;
+    
+    cout << "Enter number 1: ";
+    cin >> num1;
+    cout << "Enter number 2: ";
+    cin >> num2;
+    cout << "Enter number 3: ";
+    cin >> num3;
+    if (num1 > num2) {
+        if (num1 > num3) {
+            cout << num1 << " is the largest number." << endl;
+        } else {
+            cout << num3 << " is the largest number." << endl;
+        }
+    } else {
+        if (num2 > num3) {
+            cout << num2 << " is the largest number." << endl;
+        } else {
+            cout << num3 << " is the largest number." << endl;
+        }
+    }
+
+    return 0;
+}
+
+/* Example Output:
+Enter number 1: 30
+Enter number 2: 69
+Enter number 3: 23
+69 is the largest number.
+*/
+```
+
+## Output
+
+![image](https://github.com/user-attachments/assets/bac6a1ab-482a-4d75-8e10-8b53d1f075d6)

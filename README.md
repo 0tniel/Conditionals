@@ -646,7 +646,11 @@ int main() {
     
     return 0;
 }
-
+/*
+Enter x value: 12
+Enter y value: 0
+The point is on the x-axis
+*/
 ```
 
 ## Output
@@ -655,6 +659,6 @@ int main() {
 
 ## Conclusion
 
-Thus we have learned about if else condition
+Thus we have learned about if-else condition
 
 

@@ -463,3 +463,89 @@ Enter number 3: 23
 ## Output
 
 ![image](https://github.com/user-attachments/assets/bac6a1ab-482a-4d75-8e10-8b53d1f075d6)
+
+<br>
+<br>
+<p align="center"><b>Experiment 5e</b>/p>
+<br>
+
+## Aim
+To determine whether a number is positive or negative in C++
+
+## Software Used
+- Dev C++
+
+## Theory
+
+The NumberSign.cpp program is designed to determine whether a user-provided number is positive or negative. It includes the <iostream> library for input and output operations and uses the std namespace to simplify code. The program declares a float variable to hold the user’s input, prompts the user to enter a number, and reads this input using cin. It then employs an if-else statement to evaluate whether the number is less than 0, in which case it outputs that the number is negative; otherwise, it states that the number is positive. This basic program demonstrates the use of conditional statements in C++ to handle numerical comparisons.
+<br>
+Decision-making in C++ enables the execution of specific code blocks based on certain conditions. It allows programs to make decisions and perform different actions depending on the input or other factors.
+<br>
+The <b>if</b> Statement: The if statement evaluates a condition, and if the condition is true, it executes the block of code within the if block. If the condition is false, the code inside the if block is skipped, and the program continues to the next statement.
+<br>
+The <b>else</b> Statement: The else statement complements the if statement by providing an alternative block of code to execute when the condition is false. It ensures that one of two mutually exclusive code blocks is executed, based on the outcome of the condition.
+<br>
+
+### Syntax
+```cpp
+if (condition) {
+    // Executes this block if condition is true
+} else {
+    // Executes this block if condition is false
+}
+```
+
+## Algorithm
+
+Step 1: Start
+<br>
+Step 2: Declare a variable number.
+<br>
+Step 3: Input a number.
+<br>
+Step 4: Check if the number is less than 0:
+<br.
+If true, display "The given number is negative."
+<br>
+Else, display "The given number is positive."
+<br>
+Step 5: End
+<br>
+
+## Code
+
+```cpp
+// NumberSign.cpp
+//Otniel Jhirad
+//23070123069
+//ENTC A3
+#include <iostream>
+using namespace std;
+
+int main() {
+    float number;
+    cout << "Enter a number: ";
+    cin >> number;
+    
+    if (number < 0) {
+        cout << "The given number is negative" << endl;
+    } else {
+        cout << "The given number is positive" << endl;
+    }
+    
+    return 0;
+}
+/*
+Output
+Enter a number: -23
+The given number is negative
+*/
+```
+
+## Output
+
+![image](https://github.com/user-attachments/assets/4acdc003-0419-4150-9f10-5656a0086316)
+
+## Conclusion
+
+Thus, we used a simple if-else statement to determine whether the given number is positive or negative.
